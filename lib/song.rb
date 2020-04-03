@@ -56,6 +56,7 @@ class Song
     song = Song.new
     new_filename = filename.split(" - ")
     song_name = new_filename[1].gsub(".mp3", "")
+    song.name = song_name
   end
   
   def self.destroy_all
